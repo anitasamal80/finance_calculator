@@ -41,14 +41,14 @@ if pref_investment.lower() == 'investment':
           
         if interest_type.lower() == "Simple".lower():   
             total_amount = deposit_amount * (1 + rate_of_interest/100 * no_of_year)
-            print(f"\nSimple Interest: " ,total_amount)
+            print(f"\nSimple Interest:  {total_amount}")
             print("-"*50)
 
         #calculation for compound interest
     
         elif interest_type.lower() == "Compound".lower():
              total_amount = deposit_amount * math.pow((1 + rate_of_interest/100), no_of_year)
-             print(f"\nCompound Interest: ", total_amount)
+             print(f"\nCompound Interest: {total_amount}")
              print("-"*50)
 
         else:
@@ -62,7 +62,7 @@ elif pref_investment.lower() == 'bond':
          no_of_months = float(input("\nEnter the number of months: "))
 
          total_repayment = (((rate_of_interest/100)/12) * present_value)/(1 -( 1 + (rate_of_interest/100)/12 ) ** (-no_of_months))
-         print(f"\nMoney to repay each month : ",(total_repayment)) 
+         print(f"\nMoney to repay each month : {total_repayment}") 
          print("-"*50)    
 
 
